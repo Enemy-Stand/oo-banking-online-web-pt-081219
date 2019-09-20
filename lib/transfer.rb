@@ -25,5 +25,6 @@ class Transfer
   end
   
   def reverse_transaction
-    if @status == "complete
+    if valid? && sender.balance > amount && @status == "complete"
+      
 end
