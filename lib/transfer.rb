@@ -14,5 +14,6 @@ class Transfer
   end
   
   def execute_transaction
-    
+    if valid? && @amount > 0
+      
 end
